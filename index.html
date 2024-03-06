@@ -35,7 +35,15 @@
       <!-- Scan -->
       <section id="scan-qr">
         <h3>Scan QR Code</h3>
-        <div id="reader"></div>
+        <div id="select-camera-container">
+          <p>Select Camera</p>
+          <select id="select-camera"></select>
+          <button id="start-scan">Start Scan</button>
+        </div>
+        <div id="reader-container">
+          <video id="reader"></video>
+          <button id="stop-scan">Stop Scan</button>
+        </div>
         <div id="decoded-text-container">
           <h4>Decoded Text</h4>
           <p id="decoded-text">N/A</p>
@@ -56,8 +64,8 @@
       </section>
     </footer>
     <script src="./js/jquery.js"></script>
+    <script src="./js/qr-scanner.umd.min.js"></script>
     <script src="./js/easy.qrcode.js"></script>
-    <script src="./js/html5-qrcode.min.js"></script>
     <script src="./js/scripts.js"></script>
   </body>
 </html>

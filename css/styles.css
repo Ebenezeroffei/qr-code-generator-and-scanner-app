@@ -57,10 +57,8 @@ body {
 }
 
 #generate,
-#html5-qrcode-button-camera-permission,
-#html5-qrcode-button-camera-start,
-#html5-qrcode-button-camera-stop,
-#html5-qrcode-button-file-selection {
+#start-scan,
+#stop-scan {
   padding: 5px 30px;
   border: thin solid black;
   border-radius: 3px;
@@ -72,10 +70,8 @@ body {
 }
 
 #generate:hover,
-#html5-qrcode-button-camera-permission:hover,
-#html5-qrcode-button-camera-start,
-#html5-qrcode-button-camera-stop:hover,
-#html5-qrcode-button-file-selection:hover {
+#start-scan:hover,
+#stop-scan:hover {
   background-color: rgba(0, 0, 0, 0.795);
 }
 
@@ -141,11 +137,52 @@ body {
 
 #scan-qr {
   padding: 10px;
+  width: 500px;
+}
+
+#select-camera-container {
+  padding: 10px;
+  border: medium solid lightgray;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+
+#select-camera-container > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+#start-scan,
+#stop-scan {
+  width: 200px;
+  align-self: center;
+}
+
+#select-camera {
+  padding: 10px;
+  font-size: 15px;
+  color: black;
+  outline: none;
+  width: 100%;
+  border-radius: 3px;
+  border: thin solid lightgray;
+}
+
+#reader-container {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #reader {
-  border: medium solid gray;
-  min-height: 400px;
+  border: medium solid lightgray;
+  width: inherit;
+  display: block;
 }
 
 #decoded-text-container {
@@ -168,11 +205,6 @@ body {
   color: rgb(34, 33, 33);
   font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#reader__scan_region video {
-  width: 100% !important;
-  height: 100% !important;
 }
 
 footer {
