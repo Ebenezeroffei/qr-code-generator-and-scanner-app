@@ -26,14 +26,14 @@ Welcome to the QR Code Generator and Scanner App! This app allows users to gener
 ## Installation
 
 1. Clone the repository to your local machine:
-   `https://github.com/Ebenezeroffei/qr-code-generator-and-scanner-app.git`
+   [qr-code-generator-and-scanner-app](https://github.com/Ebenezeroffei/qr-code-generator-and-scanner-app.git)
 
 ## Technologies Used
 
 - JavaScript
 - HTML/CSS
-- QR Code Generation Library (qrcodejs `https://github.com/davidshimjs/qrcodejs`)
-- QR Code Scanning Library (qr-scanner `https://github.com/nimiq/qr-scanner`)
+- QR Code Generation Library ([qrcodejs](https://github.com/davidshimjs/qrcodejs))
+- QR Code Scanning Library ([qr-scanner](https://github.com/nimiq/qr-scanner))
 
 ## Contributing
 
